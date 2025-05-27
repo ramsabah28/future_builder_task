@@ -21,21 +21,24 @@ class _MainScreenState extends State<MainScreen> {
         padding: const EdgeInsets.all(8.0),
         child: Center(
           child: Column(
+            spacing: 32,
             children: [
               const TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(), labelText: "Postleitzahl"),
+                  border: OutlineInputBorder(),
+                  labelText: "Postleitzahl",
+                ),
               ),
-              const SizedBox(height: 32),
               OutlinedButton(
                 onPressed: () {
                   // TODO: implementiere Suche
                 },
                 child: const Text("Suche"),
               ),
-              const SizedBox(height: 32),
-              Text("Ergebnis: Noch keine PLZ gesucht",
-                  style: Theme.of(context).textTheme.labelLarge),
+              Text(
+                "Ergebnis: Noch keine PLZ gesucht",
+                style: Theme.of(context).textTheme.labelLarge,
+              ),
             ],
           ),
         ),
