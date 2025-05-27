@@ -9,12 +9,6 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   @override
-  void initState() {
-    super.initState();
-    // TODO: initiate controllers
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
