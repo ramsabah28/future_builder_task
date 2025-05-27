@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen> {
           child: Column(
             spacing: 32,
             children: [
-              const TextField(
+              TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "Postleitzahl",
